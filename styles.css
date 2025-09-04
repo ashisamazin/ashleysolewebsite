@@ -498,9 +498,11 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
+        background: rgba(15, 23, 42, 0.98);
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
         backdrop-filter: blur(10px);
     }

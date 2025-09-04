@@ -44,8 +44,8 @@ body {
 .nav-logo h2 {
     color: #60a5fa;
     font-weight: 700;
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-menu {
@@ -115,11 +115,11 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
     margin-bottom: 1rem;
-    line-height: 1.2;
-    font-family: 'Playfair Display', serif;
+    line-height: 1.1;
+    font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #60a5fa, #a855f7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -127,11 +127,12 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.75rem;
+    font-weight: 500;
     margin-bottom: 1.5rem;
     opacity: 0.9;
     color: #cbd5e1;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-content p {
@@ -221,11 +222,11 @@ body {
 /* Section Styles */
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     margin-bottom: 3rem;
     color: #f8fafc;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #60a5fa, #a855f7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -275,11 +276,11 @@ body {
 }
 
 .stat h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     color: #60a5fa;
     margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .stat p {
@@ -325,17 +326,17 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: white;
     box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
 }
 
 .expertise-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     color: #f8fafc;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .expertise-card p {
@@ -410,11 +411,11 @@ body {
 }
 
 .timeline-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
     color: #f8fafc;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .company {
@@ -449,6 +450,187 @@ body {
     left: 0;
 }
 
+/* New Experience Section Styles */
+.leadership-overview {
+    margin-bottom: 4rem;
+}
+
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overview-content h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+.overview-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+}
+
+.current-role {
+    margin-bottom: 4rem;
+}
+
+.current-role h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.role-card {
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.company-logo {
+    flex-shrink: 0;
+}
+
+.company-logo img {
+    height: 60px;
+    width: auto;
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+}
+
+.company-logo img:hover {
+    filter: brightness(1.5);
+}
+
+.role-details h4 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    color: #60a5fa;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.company-description {
+    color: #94a3b8;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.75rem;
+}
+
+.achievements li {
+    padding: 0.75rem 0;
+    color: #cbd5e1;
+    position: relative;
+    padding-left: 2rem;
+    line-height: 1.5;
+}
+
+.achievements li::before {
+    content: '▶';
+    color: #60a5fa;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+}
+
+.leadership-competencies h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.competency-card {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.competency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.3);
+    background: rgba(30, 41, 59, 0.9);
+}
+
+.competency-card i {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.competency-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+.competency-card p {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 5rem 0;
@@ -463,12 +645,18 @@ body {
     margin: 0 auto;
 }
 
+.contact-content-centered {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .contact-info h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.75rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     color: #f8fafc;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .contact-info p {
@@ -577,7 +765,8 @@ body {
 .footer-section h4 {
     margin-bottom: 1rem;
     color: #f8fafc;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 .footer-section ul {
@@ -635,11 +824,9 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: rgba(15, 23, 42, 0.98);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
         backdrop-filter: blur(10px);
     }
@@ -659,7 +846,7 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hero-buttons {
@@ -678,6 +865,11 @@ body {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .contact-content-centered {
+        text-align: center;
+        padding: 0 1rem;
     }
 
     .timeline::before {
@@ -708,17 +900,48 @@ body {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    /* New Experience Section Mobile Styles */
+    .company-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .role-card {
+        padding: 1.5rem;
+    }
+
+    .achievements ul {
+        grid-template-columns: 1fr;
+    }
+
+    .competencies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competency-card {
+        padding: 1.5rem;
+    }
+
+    .overview-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .overview-content p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hero-content h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .btn {

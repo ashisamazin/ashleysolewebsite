@@ -30,48 +30,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const company = formData.get('company');
-        const message = formData.get('message');
-        
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Please fill in all required fields.');
-            return;
-        }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-        
-        // Simulate form submission
-        const submitButton = this.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-        
-        // Simulate API call
-        setTimeout(() => {
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-        }, 2000);
-    });
-}
-
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
@@ -121,16 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroTitle) {
         const originalText = heroTitle.textContent;
         typeWriter(heroTitle, originalText, 150);
-    }
-});
-
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
     }
 });
 
